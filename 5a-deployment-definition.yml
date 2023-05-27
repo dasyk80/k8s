@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata: 		#Disctionary 
+ name: myapp3-deployment
+spec:  		#Disctionary
+ replicas: 3			
+ selector:
+  matchLabels:
+   app: myapp3  #same labels should be in template
+ template:   # pod definition
+  metadata:
+   name: myapp3-pod
+   labels:
+    type: webserver
+    app: myapp3
+    author: ykdas
+  spec:
+   containers:
+    - name: myapp3-container
+      image: nginx
