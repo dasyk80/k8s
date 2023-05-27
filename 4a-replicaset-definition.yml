@@ -1,0 +1,20 @@
+kind: ReplicaSet
+apiVersion: apps/v1
+metadata: 		#Disctionary 
+ name: myapp2-rs
+spec:  		#Disctionary
+ replicas: 3			
+ selector:
+  matchLabels:
+   app: myapp2  #same labels should be in template
+ template:   # pod definition
+  metadata:
+   name: myapp2-pod
+   labels:
+    type: webserver
+    app: myapp2
+    author: ykdas
+  spec:
+   containers:
+    - name: myapp2-container
+      image: nginx
