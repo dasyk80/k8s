@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+ name: my-backend-service 
+ labels:
+  app: backend-app
+  tier : backend
+spec:
+ type: ClusterIP  # default service
+ selector:
+  app: backend-app
+ ports:
+  - name : http
+    port: 8080 # ClusterIP service Port
+    targetPort: 8080 #Container port
