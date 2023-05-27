@@ -16,7 +16,7 @@ spec:
     app: backend-app
     tier: backend
   spec: 
-   conainers:
+   containers:
     - name: backend-app
       image: stacksimplify/kube-helloworld:1.0.0
       ports:
