@@ -1,0 +1,22 @@
+kind: ReplicaSet
+apiVersion: apps/v1
+metadata:
+ name: myreplicaset1
+spec:
+ replicas: 3
+ selector:
+  matchLabels:
+   type: webserver
+  template:
+   metadata:
+    labels:
+     type: webserver
+     app: java
+     author: ykdas
+   spec:
+    containers:
+     name: c2
+     image: nginx
+     
+ 
+ 
