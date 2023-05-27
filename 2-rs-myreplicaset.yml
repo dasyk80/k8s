@@ -17,6 +17,4 @@ spec:
    containers:
     - name: c2
       image: nginx
-     
- 
  
