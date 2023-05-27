@@ -15,9 +15,9 @@ spec:
    labels:
     app: backend-app
     tier: backend
-   spec: 
-    conainers:
-     - name: backend-app
-       image: stacksimplify/kube-helloworld:1.0.0
-       ports:
-        containerPort: 8080
+  spec: 
+   conainers:
+    - name: backend-app
+      image: stacksimplify/kube-helloworld:1.0.0
+      ports:
+       containerPort: 8080
