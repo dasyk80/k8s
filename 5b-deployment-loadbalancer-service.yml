@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+ name: deployment-loadbalancer-service
+spec:
+ type: LoadBalancer
+ selector:
+  app: myapp3
+ ports:
+  - name: http
+    port: 80  #service port
+    targetPort: 80 # container port
