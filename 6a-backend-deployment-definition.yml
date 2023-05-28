@@ -3,18 +3,18 @@ apiVersion: apps/v1
 metadata:
   name: backend-app
 spec:
- replicas: 3
- selector:
-  matchLabels:
-   app: backend-app
- template:
+  replicas: 3
+  selector:
+   matchLabels:
+    app: backend-app
+  template:
     metadata:
      labels:
-       app: backend-app
-       tier: backend
+      app: backend-app
+      tier: backend
     spec: 
       containers:
         - name: backend-app
           image: stacksimplify/kube-helloworld:1.0.0
-            ports:
-              - containerPort: 8080
+          ports:
+            - containerPort: 8080
