@@ -5,16 +5,16 @@ metadata:
 spec:
  replicas: 3
  selector:
-   matchLabels:
+  matchLabels:
    app: backend-app
  template:
-   metadata:
+    metadata:
      labels:
        app: backend-app
        tier: backend
-   spec: 
-     containers:
-       - name: backend-app
-         image: stacksimplify/kube-helloworld:1.0.0
-         ports:
-          - containerPort: 8080
+    spec: 
+      containers:
+        - name: backend-app
+          image: stacksimplify/kube-helloworld:1.0.0
+            ports:
+              - containerPort: 8080
