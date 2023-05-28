@@ -20,4 +20,4 @@ spec:
         - name: backend-app
           image: stacksimplify/kube-helloworld:1.0.0
           ports:
-          containerPort: 8080
+           - containerPort: 8080
