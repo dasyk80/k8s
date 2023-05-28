@@ -1,5 +1,5 @@
-kind apiVersion: apps/v1
 kind: Deployment
+apiVersion: apps/v1
 metadata:
   name: frontend-nginx-web
 spec:
