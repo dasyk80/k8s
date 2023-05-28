@@ -1,0 +1,19 @@
+kind apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-nginx-web
+spec:
+  replicas : 3
+  selector:
+    matchLabels:
+      app: frontend-nginx-web
+  template:
+    metadata:
+      labels:
+        app: frontend-nginx-web
+    spec:
+      containers:
+        - name: frontend-nginx-web
+          image: stacksimplify/kube-frontend-nginx:1.0.0
+          ports:
+            - containerPort: 80
