@@ -33,4 +33,4 @@ spec:
         persistentVolumeClaim:
           claimName: azure-managed-disk-pvc
       - name: usermgmt-dbcreation-script
-        configmap: usermgmt-dbcreation-script
+        configMap: usermgmt-dbcreation-script
