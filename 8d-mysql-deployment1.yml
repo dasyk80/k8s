@@ -11,7 +11,7 @@ spec:
     type: Recreate ## overwrite the rolling update to recreate as it is DB
   template: ##pod template
    metadata : 
-    lablel:
+    label:
       app: mysql
    spec:  ##Pod specification
     containers:
