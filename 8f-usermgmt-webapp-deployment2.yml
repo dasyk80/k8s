@@ -7,9 +7,11 @@ metadata:
 spec:
   replicas: 1
   selector: 
+    matchLabels: 
+      app: usermgmt-webapp
   template:
     metadata:
-      lavels:
+      labels:
         app: usermgmt-webapp
     spec:
       initContainers:
