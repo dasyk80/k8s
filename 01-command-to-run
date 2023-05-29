@@ -1,0 +1,26 @@
+
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/1-pod-definition-nginx.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/2-rs-myreplicaset.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/3-service-loadbalancer.yml
+
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/4a-replicaset-definition.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/4b-replicaset-loadbalancer-service.yml
+
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/5a-deployment-definition.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/5b-deployment-loadbalancer-service.yml
+
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/6a-backend-deployment-definition.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/6b-backend-deployment-service.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/6c-frontend-deployment-definition.yaml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/6d-frontend-loadbalancer-service.yml
+
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/7a-test-storgage-class-definition.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/7b-test-sc-pod-definition.yml
+
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/8a-storage-class-defn.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/8b-persistent-volume-claim.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/8c-usermgmt-configmap.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/8d-mysql-deployment8.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/8e-mysql-clusterip-service4.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/8f-usermgmt-webapp-deployment2.yml
+kubectl create -f https://raw.githubusercontent.com/dasyk80/k8s/main/8g-user-mgmt-webapp-service2.yml
