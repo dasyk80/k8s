@@ -4,7 +4,7 @@ metadata:
  name: mysql
 spec:
   selector: # Pod Label
-   app: mysql
+    app: mysql
   ports: 
-   -port: 3306
+   - port: 3306
   clusterIP: None # means use pod IP
