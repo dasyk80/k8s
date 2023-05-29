@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
@@ -11,7 +11,7 @@ spec:
     type: Recreate ## overwrite the rolling update to recreate as it is DB
   template: ##pod template
    metadata : 
-    label:
+    labels:
       app: mysql
    spec:  ##Pod specification
     containers:
