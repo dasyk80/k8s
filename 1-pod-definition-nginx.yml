@@ -2,6 +2,7 @@ kind: Pod
 apiVersion: v1
 metadata:
  name: mypod
+ namespace : dev
 spec:
  containers:
   - name: c1
