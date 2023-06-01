@@ -4,8 +4,8 @@ kind: Service
 metadata:
   name: mysql
 spec:
-  ExternalName
+  type: ExternalName
   externalName: mysqlserver01june23.mysql.database.azure.com
 
   ## command to connect mysql db from AKS
-  ##kubectl run -it --rm --image=mysql:5.7.22 --restart=Never mysql-client -- mysql -h <>.mysql.database.azure.com -u <> -p<>
+  ##kubectl run -it --rm --image=mysql:5.7.22 --restart=Never mysql-client -- mysql -h <>.mysql.database.azure.com -u <> -p<> 
