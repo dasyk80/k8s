@@ -19,3 +19,11 @@ spec:
           image: stacksimplify/kube-nginxapp1:1.0.0
           ports:
             - containerPort: 80
+
+
+#TO Check
+#kubectl get pods
+#kubectl get svc
+#kubectl get ingress
+#kubectl get pod -n ingress-basic
+# kubectl logs -f ingress-nginx-controller-5964797467-krkmp -n ingress-basic
